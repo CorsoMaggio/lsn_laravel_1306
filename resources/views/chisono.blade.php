@@ -27,7 +27,7 @@
     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>
-        <h1>Ciao, sei in Homepage.</h1>
+        <h1>Ciao, sei in "Chi Sono".</h1>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
