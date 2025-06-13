@@ -2,12 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::get('/chi_sono', function () {
-    return view('Chisono');
+Route::get('/chisono', function () {
+    $aboutme = ['Mother', 'Runner', 'Web Developer', 'Animal lover'];
+    return view('Chisono', ['aboutme' => $aboutme]);
 });
 
 Route::get('/contatti', function () {
