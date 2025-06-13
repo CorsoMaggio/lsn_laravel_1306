@@ -23,4 +23,3 @@ Route::get('profilo/Leysan', function () {
 Route::get('profilo/', function () {
     return '';
 });
-
