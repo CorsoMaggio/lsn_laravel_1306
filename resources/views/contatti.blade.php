@@ -15,28 +15,36 @@
     <main>
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="welcome">Homepage</a>
+                <a class="nav-link active" aria-current="page" href="/welcome">Homepage</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="chisono">Chi Sono</a>
+                <a class="nav-link" href="/chisono">Chi Sono</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contatti">Contatti</a>
+                <a class="nav-link" href="/contatti">Contatti</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
             </li>
 
         </ul>
-
-        <div class="card" style="width: 18rem;">
-            <ul class="list-group list-group-flush">
-                @foreach ($contatti as $contact)
-                <li class="list-group-item">{{$contact['title']}}</li>
+        <h1>Ciao, sei in "Contatti".</h1>
+        <hr>
+     
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Clicca per vedere i contatti
+  </button>
+  <ul class="dropdown-menu">
+    @foreach ($contatti as $contact)
+                <li class="dropdown-menu-item"><a href="/dettaglio/{{ $contact['id'] }}"> {{$contact['title']}}</a></li>
                 @endforeach
+                
+  </ul>
+</div>
+
 
             </ul>
-            <h1>Ciao, sei in "Contatti".</h1>
             <hr>
 
     </main>

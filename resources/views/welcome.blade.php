@@ -15,13 +15,13 @@
     <main>
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="welcome">Homepage</a>
+                <a class="nav-link active" aria-current="page" href="/welcome">Homepage</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="chisono">Chi Sono</a>
+                <a class="nav-link" href="/chisono">Chi Sono</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contatti">Contatti</a>
+                <a class="nav-link" href="/contatti">Contatti</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>

@@ -32,6 +32,35 @@ Route::get('/contatti', function () {
     return view('Contatti', ['contatti' => $contatti]);
 });
 
+Route::get('/dettaglio/{id}', function ($id) {
+    $contatti = [
+        [
+            'id' => 1,
+            'title' => 'LinkedIn',
+            'description' => 'Il mio profilo LinkedIn',
+        ],
+        [
+            'id' => 2,
+            'title' => 'Behance',
+            'description' => 'Vedi il mio Behance',
+        ],
+        [
+            'id' => 3,
+            'title' => 'Gmail',
+            'description' => 'Mandami email',
+        ]
+    ];
+
+    foreach ($contatti as $contact) {
+        if ($id == $contact['id']) {
+            return view('detail', ['contact' => $contact]); //creare file detail con html uguale
+
+        }
+    }
+    abort(404);
+});
+
+
 Route::get('profilo/Leysan', function () {
     return 'profilo di Leysan';
 });
