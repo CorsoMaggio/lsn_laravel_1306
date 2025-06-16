@@ -1,10 +1,18 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 
 Route::get('/welcome', function () {
     return view('welcome');
 });
+
+use App\Http\Controllers\PageController;
+
+Route::get('/', [PageController::class, 'homepage']);
+Route::get('/chisono', [PageController::class, 'chisono']);
+Route::get('/contatti', [PageController::class, 'contact']);
+
 
 Route::get('/chisono', function () {
     $aboutme = ['Mother', 'Runner', 'Web Developer', 'Animal lover'];

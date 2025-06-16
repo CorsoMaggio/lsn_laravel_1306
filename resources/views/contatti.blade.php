@@ -39,7 +39,7 @@
     @foreach ($contatti as $contact)
                 <li class="dropdown-menu-item"><a href="/dettaglio/{{ $contact['id'] }}"> {{$contact['title']}}</a></li>
                 @endforeach
-                
+                             
   </ul>
 </div>
 
