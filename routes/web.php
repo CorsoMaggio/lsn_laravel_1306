@@ -12,7 +12,24 @@ Route::get('/chisono', function () {
 });
 
 Route::get('/contatti', function () {
-    return view('contatti');
+    $contatti = [
+        [
+            'id' => 1,
+            'title' => 'LinkedIn',
+            'description' => 'Il mio profilo LinkedIn',
+        ],
+        [
+            'id' => 2,
+            'title' => 'Behance',
+            'description' => 'Vedi il mio Behance',
+        ],
+        [
+            'id' => 3,
+            'title' => 'Gmail',
+            'description' => 'Mandami email',
+        ]
+    ];
+    return view('Contatti', ['contatti' => $contatti]);
 });
 
 Route::get('profilo/Leysan', function () {
